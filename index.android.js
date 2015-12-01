@@ -11,14 +11,12 @@ var {
   Text,
   View,
 } = React;
+var { Icon, } = require('react-native-icons');
 
 var ReactNativeIconsTest = React.createClass({
   render: function() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
         <Icon
           name='ion|beer'
           size={150}
@@ -37,15 +35,11 @@ var styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  beer: {
+    borderWidth: 1,
+    borderColor: 'red',
+    height: 150,
+    width: 150,
   },
 });
 
